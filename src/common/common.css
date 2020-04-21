@@ -1,0 +1,214 @@
+body {
+    font-family: 'Microsoft Yahei', 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background: url(../assets/main-page-bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    background-color: #f71b1b;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+
+#app,.content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+}
+.child-page-entry{
+	padding: 0 90px;
+}
+.child-page-entry button{
+	margin: 0 20px 10px;
+}
+
+.child-page-bg {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+}
+.record{
+	width: 60%;
+	height: 80%;
+}
+.record h4{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 0;
+	color: #ffe9af;
+}
+.record .no-record{
+	text-align: center;
+	padding: 20px 0;
+}
+.record  .record-list{
+	width: 100%;
+	height: 80%;
+	overflow: auto;
+}
+.prize-list .item-title{
+	line-height: 40px;
+	background-color: #f5f7fa;
+	padding: 0 10px;
+	font-size: 14px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+.prize-list .item-con{
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+.prize-list  .c-item{
+	display: flex;
+	width: 20%;
+}
+.prize-list  .c-item .avatar{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-right: 10px;
+	overflow: hidden;
+	background: #fff;
+}
+.prize-list  .c-item .avatar img{
+	width: 100%;
+}
+.prize-list  .c-item .min{
+	display: flex;
+	flex-flow: column;
+	padding: 10px 0;
+	color: #fff202;
+}
+.prize-list  .c-item span{
+	font-size: 15px;
+}
+.prize-list  .c-item .name{
+	margin-top: 15px;
+}
+.prize-area {
+	display: flex;
+	width: 100%;
+	flex: 0.1;
+	justify-content: center; 
+	align-self: flex-start;
+	margin-top: 100px;
+}
+.prize-area .name{
+	font-size: 60px;
+	color: #ffe9af;
+	text-align: center;
+	line-height: 60px;
+}
+.winner-area {
+	flex: 0.7;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+
+.winner-con {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.avatar-con {
+	width: 200px;
+	height: 200px;
+	margin: 0 20px;
+}
+
+.avatar-bg {
+	display: flex;
+	align-items: center;
+	border: 2px solid #fff202;
+	background: #fff;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.avatar-pic {
+	width: 100%;
+	height: auto;
+}
+
+.winner-info {
+	font-size: 30px;
+	line-height: 50px;
+	display: block;
+	text-align: center;
+	color: #fff202;
+}
+.prize-pic {
+	width: 100%;
+	height: 100%;
+}
+.prize-btn{
+	flex: 0.1;
+	display: flex;
+	justify-content: center; 
+	align-self: flex-end;
+	width: 100%;
+}
+
+.button {
+	width: 250px;
+	height: 90px;
+	font-size: 40px;
+	line-height: 90px;
+	color: #f90208;
+	background: url(../assets/prize-btn.png) no-repeat center center;
+	text-align: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+
+.backToHome {
+	position: fixed;
+	left: 25px;
+	top: 20px;
+	padding: 4px 24px;
+	color: #f71b1b;
+	background-color: #fff202;
+	font-size: 20px;
+	border-radius: 5px;
+	text-align: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.addPerson{
+	left: initial;
+	right: 25px;
+}
+.flip-list-enter-active {
+	transition: all .3s ease;
+}
+
+.filp-list-leave-active {
+	transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.flip-list-enter, .slip-list-leave-to {
+	transform: translateY(-30px);
+	opacity: 0;
+}
