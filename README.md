@@ -1,6 +1,6 @@
-# prize-draw-with-vue
+# draw-2020-vue
 
-> A Vue.js project -- VueJS开发的轻量级年会抽奖程序
+> 轻量级年会抽奖项目
 
 ## Build Setup
 
